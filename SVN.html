@@ -40,15 +40,12 @@
 
     
 
-    <h4 class="name" id="SVN"><span class="type-signature"></span>new SVN<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="SVN"><span class="type-signature"></span>new SVN<span class="signature">(config, callback)</span><span class="type-signature"></span></h4>
 
     
 
 
 
-<div class="description">
-    node svn command
-</div>
 
 
 
@@ -56,6 +53,205 @@
 
 
 
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>config</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">config, when string, same as config.cwd
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>cwd</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Current work directory</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>username</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>password</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Callback to call afterwards</td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -91,7 +287,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="svn.js.html">svn.js</a>, <a href="svn.js.html#line52">line 52</a>
+        <a href="svn.js.html">svn.js</a>, <a href="svn.js.html#line70">line 70</a>
     </li></ul></dd>
     
 
@@ -124,13 +320,6 @@
 
     
 
-    
-        <h3 class="subsection-title">Classes</h3>
-
-        <dl>
-            <dt><a href="SVN.SVN.html">SVN</a></dt>
-            <dd></dd>
-        </dl>
     
 
      
@@ -322,7 +511,7 @@ The `svn add` commands add specified files/directory under version control, recu
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="svn.js.html">svn.js</a>, <a href="svn.js.html#line85">line 85</a>
+        <a href="svn.js.html">svn.js</a>, <a href="svn.js.html#line89">line 89</a>
     </li></ul></dd>
     
 
@@ -569,7 +758,7 @@ The `svn cp` command copy files with their versionning infos into another locati
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="svn.js.html">svn.js</a>, <a href="svn.js.html#line228">line 228</a>
+        <a href="svn.js.html">svn.js</a>, <a href="svn.js.html#line232">line 232</a>
     </li></ul></dd>
     
 
@@ -618,13 +807,13 @@ The `svn cp` command copy files with their versionning infos into another locati
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="SVN.html">SVN</a></li><li><a href="SVN.SVN.html">SVN</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="node.module_svn.html">svn</a></li></ul><h3>Classes</h3><ul><li><a href="module-node.svn.SVN.html">SVN</a></li><li><a href="SVN.html">SVN</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Thu Mar 10 2016 19:18:24 GMT-1000 (TAHT)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Thu Mar 10 2016 19:20:58 GMT-1000 (TAHT)
 </footer>
 
 <script> prettyPrint(); </script>
